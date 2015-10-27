@@ -2,7 +2,9 @@
 
 WIDTH = 800
 HEIGHT = 600
-TITLE = "Libtcod RL"
+STR_TITLE = "Libtcod RL"
+TITLE = bytearray()
+TITLE.extend(STR_TITLE)
 
 ltc.console_init_root(WIDTH, HEIGHT, TITLE)
 console = ltc.console_new(WIDTH, HEIGHT)
